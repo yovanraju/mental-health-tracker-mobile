@@ -3,18 +3,29 @@ import 'package:mental_health_tracker/widgets/left_drawer.dart';
 import 'package:mental_health_tracker/widgets/mood_card.dart';
 
 class MyHomePage extends StatelessWidget {
-  final String npm = '2306275512'; // NPM
-  final String name = 'Yovan Raju'; // Nama
-  final String className = 'PBP C'; // Kelas
+    MyHomePage({super.key});
+    final String npm = '2306203873'; // NPM
+    final String name = 'Fikar Hilmi Adhrevi'; // Nama
+    final String className = 'PBP C'; // Kelas
 
-  final List<ItemHomepage> items = [
+    final List<ItemHomepage> items = [
          ItemHomepage("Lihat Mood", Icons.mood),
          ItemHomepage("Tambah Mood", Icons.add),
          ItemHomepage("Logout", Icons.logout),
      ];
-
-  MyHomePage({super.key});
   
+
+  // This widget is the home page of your application. It is stateful, meaning
+  // that it has a State object (defined below) that contains fields that affect
+  // how it looks.
+
+  // This class is the configuration for the state. It holds the values (in this
+  // case the title) provided by the parent (in this case the App widget) and
+  // used by the build method of the State. Fields in a Widget subclass are
+  // always marked "final".
+
+  
+
   @override
   Widget build(BuildContext context) {
     // Scaffold menyediakan struktur dasar halaman dengan AppBar dan body.
@@ -130,3 +141,5 @@ class InfoCard extends StatelessWidget {
     );
   }
 }
+
+
